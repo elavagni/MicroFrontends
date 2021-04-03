@@ -10,7 +10,7 @@ export default () => {
     // when the component if first displayed (by providing an empty dependency list)
     useEffect(() => {
         const { onParentNavigate } = mount(ref.current, {
-            initialPath: history.location.pathname , 
+            initialPath: history.location.pathname, 
             //Sync container browser history with values from Marketing Memory History (url paths)
             //destruct and rename variable 
             onNavigate: ({ pathname: nextPathname }) => {
