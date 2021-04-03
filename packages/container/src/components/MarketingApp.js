@@ -11,6 +11,7 @@ export default () => {
     useEffect(() => {        
         //Call the mount function from MarketingApp, and pass an options object as the second argument
         const { onParentNavigate } = mount(ref.current, {  
+            initialPath: history.location.pathname,
             //the onNavigate callback will give us the navigation object, we just need the pathname, so we can 
             //deconstruct and rename the property to nextPathname          
             onNavigate: ({ pathname: nextPathname }) => {
