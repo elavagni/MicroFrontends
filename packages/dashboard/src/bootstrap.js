@@ -1,6 +1,8 @@
 import { createApp } from 'vue';
 import Dashboard from './components/Dashboard.vue';
 
+//Add comment to force deploy action to run
+
 //Mount function to start up the app
 const mount = (el) => {
     const app = createApp(Dashboard);
