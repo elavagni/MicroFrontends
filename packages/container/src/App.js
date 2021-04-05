@@ -14,6 +14,7 @@ const generateClassName = createGenerateClassName({
     productionPrefix: 'co'
 })
 
+// Create history object manually to pass it down to the Router component 
 const history = createBrowserHistory();
 
 export default () => {
